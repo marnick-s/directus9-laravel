@@ -1,0 +1,25 @@
+{
+    "name": "marnick-s/directus9-laravel",
+    "description": "Directus 9 API Wrapper for Laravel",
+    "type": "library",
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Marnick",
+            "email": "contact@marnick.dev",
+            "homepage": "https://marnick.dev/"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "webkenth/directus-api-laravel": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "C14r\\Directus\\Laravel\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
