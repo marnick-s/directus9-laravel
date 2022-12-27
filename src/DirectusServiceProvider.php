@@ -1,10 +1,10 @@
 <?php
 
-namespace Slations\DirectusSdk\Laravel;
+namespace Marnick\Directus9Laravel;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelDirectusServiceProvider extends ServiceProvider
+class DirectusServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -29,12 +29,12 @@ class LaravelDirectusServiceProvider extends ServiceProvider
             __DIR__ . '/../config/directus.php', 'directus'
         );
 
-        $this->app->singleton(LaravelDirectus::class, function ($app, $connection = null) {
-            return LaravelDirectus::getInstance($connection);
+        $this->app->singleton(Directus::class, function ($app, $connection = null) {
+            return Directus::getInstance($connection);
         });
 
         $this->app->singleton('directus', function ($app, $connection = null) {
-            return LaravelDirectus::getInstance($connection);
+            return Directus::getInstance($connection);
         });
     }
 
@@ -45,7 +45,7 @@ class LaravelDirectusServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return [LaravelDirectus::class];
+        return [Directus::class];
     }
 
 }

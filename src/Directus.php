@@ -1,11 +1,11 @@
 <?php
 
-namespace Slations\DirectusSdk\Laravel;
+namespace Marnick\Directus9Laravel;
 
-use Slations\DirectusSdk\Directus;
+use Slations;
 use Illuminate\Support\Arr;
 
-class LaravelDirectus extends Directus
+class Directus extends Slations\DirectusSdk\Directus
 {
     private static array $instances = [];
 
