@@ -1,7 +1,11 @@
 # A Directus 9 SDK for Laravel
 This package makes it easier to use [alantiller/directus-php-sdk](https://github.com/alantiller/directus-php-sdk) with Laravel.
 
-Just install the package and put this in your .env:
+Just install the package by running
+```
+composer require marnick-s/directus9-laravel
+```
+and put this in your .env:
 ```
 DIRECTUS_URL=https://directus.example.com
 DIRECTUS_ACCESS_TOKEN=your-static-access-token-here
