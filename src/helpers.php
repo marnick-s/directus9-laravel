@@ -1,10 +1,10 @@
 <?php
 
-namespace Slations\DirectusSdk\Laravel;
+namespace Marnick\Directus9Laravel;
 
 if (! function_exists('directus')) {
-    function directus(?string $connection = null)
+    function directus()
     {
-        return resolve('directus', ['connection' => $connection]);
+        return new Directus;
     }
 }

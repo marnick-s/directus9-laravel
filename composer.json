@@ -12,11 +12,11 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "webkenth/directus-api-laravel": "^1.2"
+        "alantiller/directus-php-sdk": "^1.0.3"
     },
     "autoload": {
         "psr-4": {
-            "C14r\\Directus\\Laravel\\": "src/"
+            "Marnick\\Directus9Laravel\\": "src/"
         },
         "files": [
             "src/helpers.php"
