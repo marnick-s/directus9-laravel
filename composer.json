@@ -1,6 +1,6 @@
 {
     "name": "marnick-s/directus9-laravel",
-    "description": "Directus 9 API Wrapper for Laravel",
+    "description": "A Directus 9 SDK for Laravel",
     "type": "library",
     "license": "GPL-3.0-only",
     "authors": [
